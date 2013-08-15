@@ -1,0 +1,39 @@
+object fAbout: TfAbout
+  Left = 611
+  Height = 356
+  Top = 277
+  Width = 313
+  BorderStyle = bsDialog
+  Caption = 'About Hello Word'
+  ClientHeight = 356
+  ClientWidth = 313
+  KeyPreview = True
+  OnKeyDown = FormKeyDown
+  LCLVersion = '1.0.10.0'
+  object btn_Close: TBitBtn
+    Left = 122
+    Height = 30
+    Top = 319
+    Width = 75
+    Caption = '&Close'
+    OnClick = btn_CloseClick
+    TabOrder = 0
+  end
+  object Memo1: TMemo
+    Left = 8
+    Height = 307
+    Top = 5
+    Width = 298
+    Font.Height = -19
+    Lines.Strings = (
+      ''
+      'this is sample form.'
+      ''
+      'called by function "info"'
+      'file: helloword.lpr'
+    )
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 1
+  end
+end
